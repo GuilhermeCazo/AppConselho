@@ -5,8 +5,25 @@
 
     <StackLayout>
         
-        <Label Text="Conselho:" HorizontalOptions="Center" FontSize="22" FontAttributes="Bold" />
-        
-    </StackLayout>
+        <StackLayout>
 
+            <Label Text="Conselho:" HorizontalOptions="Center" FontSize="22" FontAttributes="Bold" />
+
+            <Button x:Name="btn_novo_conselho" Text="Clique para ter um novo Conselho" Clicked="btn_Novo_Conselho_Clicked" />
+        </StackLayout>
+
+        <StackLayout>
+
+            <Label Text="ID:" />
+            <Label Text="{Binding ID}" />
+            
+            <Label Text="Mensagem:" />
+            <Label Text="{Binding Mensagem}" />
+
+        </StackLayout>
+
+
+
+
+    </StackLayout>
 </ContentPage>

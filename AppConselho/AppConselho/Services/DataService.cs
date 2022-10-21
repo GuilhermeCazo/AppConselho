@@ -2,9 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
+using Newtonsoft.Json;
+using System.Net.Http;
+using System.Threading.Tasks;
+using AppConselho.Model;
+
 namespace AppConselho.Services
 {
-    internal class DataService
+    public class DataService
     {
+
+       // public static async Task(Conselho) GetConselho(string)
     }
 }

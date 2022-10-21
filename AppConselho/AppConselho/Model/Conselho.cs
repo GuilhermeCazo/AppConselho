@@ -7,6 +7,15 @@ namespace AppConselho.Model
      class Conselho
     {
 
-        //TERMINAR ISSO
+        public string Id { get; set; }
+        public string Mensagem { get; set; }
+
+      
+        public Conselho()
+        {
+
+            this.Id = " ";
+            this.Mensagem = " ";
+        }
     }
 }
