@@ -5,6 +5,7 @@
 
     <StackLayout>
         
+        
         <StackLayout>
 
             <Label Text="Conselho:" HorizontalOptions="Center" FontSize="22" FontAttributes="Bold" />
@@ -15,7 +16,7 @@
         <StackLayout>
 
             <Label Text="ID:" />
-            <Label Text="{Binding ID}" />
+            <Label Text="{Binding Id}" />
             
             <Label Text="Mensagem:" />
             <Label Text="{Binding Mensagem}" />

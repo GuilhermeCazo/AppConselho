@@ -14,8 +14,8 @@ namespace AppConselho.Model
         public Conselho()
         {
 
-            this.Id = " ";
-            this.Mensagem = " ";
+            this.Id = "";
+            this.Mensagem = "";
         }
     }
 }
