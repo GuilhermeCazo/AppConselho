@@ -25,8 +25,7 @@ namespace AppConselho
         private async void btn_Novo_Conselho_Clicked(object sender, EventArgs e)
         {
             try
-            {
-
+            { 
           
             Console.WriteLine("_____________");
              Conselho Advice = await DataService.GetConselho();
@@ -34,6 +33,8 @@ namespace AppConselho
             this.BindingContext = Advice;
             btn_novo_conselho.Text = "Novo Conselho";
             }
+
+
             catch(Exception ex)
             {
                 await DisplayAlert("Erro", ex.Message, "ok");

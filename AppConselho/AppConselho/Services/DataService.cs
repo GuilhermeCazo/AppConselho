@@ -9,15 +9,13 @@ using AppConselho.Model;
 
 namespace AppConselho.Services
 {
-     class DataService
+     public class DataService
     {
         //public
         public static async Task<Conselho> GetConselho()
         {
 
-            string queryString = "https://api.adviceslip.com/advice";
-
-            Console.WriteLine(queryString);
+            string queryString = "https://api.adviceslip.com/advice";            
 
             dynamic resultado = await getDataFromService(queryString).ConfigureAwait(false);
 
@@ -25,12 +23,12 @@ namespace AppConselho.Services
 
 
 
-            if (resultado != null)
+            if (resultado["slip"] != null)
             {
                 Conselho aaa = new Conselho();
 
-                aaa.Id = (string)resultado["id"];
-                aaa.Mensagem = (string)resultado["advice"];
+                aaa.Id = (string)resultado["slip"]["id"];
+                aaa.Mensagem = (string)resultado["slip"]["advice"];
 
                 return aaa;
 
@@ -47,6 +45,7 @@ namespace AppConselho.Services
             HttpClient client = new HttpClient();
             var response = await client.GetAsync(queryString);
             dynamic data = null;
+
             if (response != null)
             {
 

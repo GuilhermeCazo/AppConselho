@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AppConselho.Model
 {
-     class Conselho
+     public class Conselho
     {
 
         public string Id { get; set; }

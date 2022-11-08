@@ -4,5 +4,12 @@
              x:Class="AppConselho.App">
     <Application.Resources>
 
+        <Style TargetType="ContentPage"
+               ApplyToDerivedTypes="True">
+
+
+            <Setter Property="BackgroundColor" Value="	#F5F5F5" />
+        </Style>
+        
     </Application.Resources>
 </Application>

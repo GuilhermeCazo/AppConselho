@@ -4,27 +4,42 @@
              x:Class="AppConselho.MainPage">
 
     <StackLayout>
+
+        <Frame VerticalOptions="FillAndExpand" Padding="25" CornerRadius="15" Margin="12">
+
+            <StackLayout>
+
+                <Label Text=" Conselho:" HorizontalOptions="Center" FontSize="29" FontAttributes="Bold" TextColor="DarkCyan"/>
+                <Label Text=" Um novo conselho todo click ;D" HorizontalOptions="Start" FontSize="20" FontAttributes="Bold" TextColor="#36BFFF"/>
+
+                
+
+                <StackLayout>
+
+                    <StackLayout>
+
+                        <Label Text="Conselho numero:"/>  
+                        <Label Text="{Binding Id}" />
+
+                        <Label Text="Mensagem:" />
+                        <Label Text="{Binding Mensagem}" /> 
+
+                    </StackLayout>
+
+                    <StackLayout>
+                        
+                        <Button CornerRadius="15" Margin="0,500,0,0"
+                            
+                            
+                            x:Name="btn_novo_conselho" Text="Clique para ter um novo Conselho" Clicked="btn_Novo_Conselho_Clicked" />
+
+                    </StackLayout>
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </Frame>
         
-        
-        <StackLayout>
-
-            <Label Text="Conselho:" HorizontalOptions="Center" FontSize="22" FontAttributes="Bold" />
-
-            <Button x:Name="btn_novo_conselho" Text="Clique para ter um novo Conselho" Clicked="btn_Novo_Conselho_Clicked" />
-        </StackLayout>
-
-        <StackLayout>
-
-            <Label Text="ID:" />
-            <Label Text="{Binding Id}" />
-            
-            <Label Text="Mensagem:" />
-            <Label Text="{Binding Mensagem}" />
-
-        </StackLayout>
-
-
-
-
     </StackLayout>
 </ContentPage>
